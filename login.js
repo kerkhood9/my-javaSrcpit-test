@@ -29,4 +29,4 @@ for (let i = 0; i < people.length; i++) {
       display.innerHTML += '<li>' + people[i].name + '</li>';
     }
   }
-  document.getElementById("demo").innerHTML;
+  <script src="./home.js"></script>
