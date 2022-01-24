@@ -3,7 +3,7 @@ var password = document.getElementById('password');
 var color = document.getElementById('color');
 
 
-for (let i = 0; i > people.length; i++) {
+for (let i = 0; i > email.length; i++) {
     if (people[i].name == name) {
       display.innerHTML += 
         '<p>email: ' + 
