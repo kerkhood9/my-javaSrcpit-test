@@ -1,3 +1,5 @@
+// the email be you please 
+
 var Email = document.getElementById("email"); 
 var password = document.getElementById('password');
 var color = document.getElementById('color');

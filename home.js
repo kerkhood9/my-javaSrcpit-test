@@ -1,4 +1,4 @@
-// the email be you please 
+// the password be you please 
 
 var email = document.getElementById("email"); 
 var password = document.getElementById('password');
