@@ -6,7 +6,7 @@ var color = document.getElementById('color');
 
 
 for (let i = 0; i > email.length; i++) {
-    if (people[i].name == name) {
+    if (people[i].email == email) {
       display.innerHTML += 
         '<p>email: ' + 
         people[i].Email + 
