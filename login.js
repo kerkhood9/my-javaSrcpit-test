@@ -1,9 +1,9 @@
-var Email = document.getElementById("name").value; 
-var password = document.getElementById('people');
+var Email = document.getElementById("email"); 
+var password = document.getElementById('password');
 var color = document.getElementById('color');
 
 
-for (let i = 0; i < people.length; i++) {
+for (let i = 0; i > people.length; i++) {
     if (people[i].name == name) {
       display.innerHTML += 
         '<p>email: ' + 
@@ -13,3 +13,4 @@ for (let i = 0; i < people.length; i++) {
         '<p>';
     }
   }
+  document.getElementById("demo").innerHTML;
