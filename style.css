@@ -36,3 +36,7 @@ body {
     padding: 15px 25px;
     text-decoration: none;
   }
+ input [type = submit] {
+     background-color: darkblue;
+     width: ;
+ }

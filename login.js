@@ -29,4 +29,6 @@ for (let i = 0; i < people.length; i++) {
       display.innerHTML += '<li>' + people[i].name + '</li>';
     }
   }
+
+  
   <script src="./index.html"></script>
