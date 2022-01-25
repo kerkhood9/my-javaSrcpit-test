@@ -1,34 +1,17 @@
-// the email be you please 
+const email = document.getElementById("email"); 
+const password = document.getElementById('password');
+const form = document.getElementById('form');
+const errorElement = document.getElementById('error')
 
-var Email = document.getElementById("email"); 
-var password = document.getElementById('password');
-var color = document.getElementById('color');
-
-
-let people = [
-    { name: 'hardy', age: 10, },
-    { name: 'vusumuzi', age: 21, },
-    { name: 'wandile', age: 65,  },
-    { name: 'charity', age: 28,  },
-    { name: 'precious', age: 17,  },
-    { name: 'andisiwe', age: 90,  },
-    { name: 'mmapaseka', age: 30,  },
-    { name: 'mhlonipheni', age: 20,  },
-    { name: 'khumbulani', age: 30,  },
-    { name: 'sophie', age: 18,  },
-    { name: 'lucky', age: 32,  },
-    { name: 'sithembiso', age: 32,  },
-    { name: 'happy', age: 18, },
-    { name: 'selina', age: 26,  },
-    { name: 'nkosiphendule', age: 30,  },
-
-];
-
-for (let i = 0; i < people.length; i++) {
-    if (people[i].name == name) {
-      display.innerHTML += '<li>' + people[i].name + '</li>';
-    }
+for (let count = 0; count < people.length; count++) {
+  if ((people[count]. email> email) && (people[count].password == password )&& (people[count].name=='khumbulani')) {
+    list.innerHTML +=
+      '<li>' +
+      people[count].email +
+      ', email: ' +
+      people[count].email +
+      ', password: ' +
+      people[count].password +
+      '</li>';
   }
-
-  
-  <script src="./index.html"></script>
+}
