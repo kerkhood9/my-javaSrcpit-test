@@ -14,12 +14,10 @@ body {
   }
 
 .submit {
-    column-rule-color: blue;
-    tab-size: 15;
-} 
-    
-.nav {
-    color: blue;
+    background-color: #2913f1;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
 }
 
 .login {
@@ -30,4 +28,11 @@ body {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+  }
+
+  .fcc-btn {
+    background-color: #2913f1;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
   }
