@@ -1,7 +1,7 @@
 const email = document.getElementById("email"); 
 const password = document.getElementById('password');
-const form = document.getElementById('form');
-const errorElement = document.getElementById('error')
+var list = document.getElementById('people');
+list.innerHTML = '';
 
 for (let count = 0; count < people.length; count++) {
   if ((people[count]. email> email) && (people[count].password == password )&& (people[count].name=='khumbulani')) {
