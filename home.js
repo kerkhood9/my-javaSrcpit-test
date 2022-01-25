@@ -28,7 +28,7 @@ for (let count = 0; count < people.length; count++) {
     list.innerHTML +=
       '<li>' +
       people[count].name +
-      ', age: ' +
+      ', name: ' +
       people[count].age +
       ', age: ' +
       people[count].age +
