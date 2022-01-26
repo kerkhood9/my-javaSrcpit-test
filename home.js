@@ -25,5 +25,5 @@ for (let count = 0; count < people.length; count++) {
       '</li>';
   }
 }
-
+<li><a href="./home.html"></a></li>
   
