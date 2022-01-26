@@ -1,5 +1,7 @@
-let myName;
-let myAge;
+const name = document.getElementById("name"); 
+const age = parseInt(document.getElementById('age').value) || 0;
+var list = document.getElementById('people');
+list.innerHTML = '';
 
 
 let names = ['hardy','khumbulani','william','Mmapaseka','happy','sithembiso','kagisho','mdud','precious','selina','nkosi','andiwe'];
@@ -23,5 +25,5 @@ for (let count = 0; count < people.length; count++) {
       '</li>';
   }
 }
-<li><a href="./home.html"></a></li>
+
   
