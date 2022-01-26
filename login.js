@@ -1,18 +1,23 @@
-const email = document.getElementById("email"); 
-const password = document.getElementById('password');
-var list = document.getElementById('people');
-list.innerHTML = '';
+const form = document.getElementById('signup');
+const name = form.elements['name'];
+const email = form.elements['email'];
 
-// this one get the values
-function getInputValues() {
-  email = document.getElementById("email").value;
-  password = Number(document.getElementById("password").value);
-}
+// getting the element's value
+let fullName = name.value;
+let emailAddress = email.value;
 
+form.elements[1]; // by index
+form.elements['email']; //  by name
+form.elements['email']; // by id
 
 function displayTable() {
   const table = document.getElementById("tableData");
   table.innerHTML = "";
+
+  form.addEventListener('submit', (event) => {
+    // stop form submission
+    event.preventDefault();
+});
 
   for (let i = 0; i < transactions.length; i++) {
       table.innerHTML +=
@@ -54,22 +59,63 @@ function addExpense() {
   calcutateAndDisplay();
   displayTable();
 
+}// show a message with a type of the input
+function showMessage(input, message, type) {
+	// get the small element and set the message
+	const msg = input.parentNode.querySelector("small");
+	msg.innerText = message;
+	// update the class for the input
+	input.className = type ? "success" : "error";
+	return type;
 }
 
-function calcutateAndDisplay() {
-  displayemail = document.getElementById("email");
-  displaypassword = document.getElementById("password");
-  display = document.getElementById("display");
-
- 
-
-  for (let i = 0; i < transactions.length; i++) {
-      if (transactions[i].type == "email") {
-          emailTotal += transactions[i].email;
-      }
-
-      if (transactions[i].type == "password") {
-        passwordTotal += transactions[i].password;
-      }
-  }
+function showError(input, message) {
+	return showMessage(input, message, false);
 }
+
+function showSuccess(input) {
+	return showMessage(input, "", true);
+}
+
+function hasValue(input, message) {
+	if (input.value.trim() === "") {
+		return showError(input, message);
+	}
+	return showSuccess(input);
+}
+
+function validateEmail(input, requiredMsg, invalidMsg) {
+	// check if the value is not empty
+	if (!hasValue(input, requiredMsg)) {
+		return false;
+	}
+	// validate email format
+	const emailRegex =
+		/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+	const email = input.value.trim();
+	if (!emailRegex.test(email)) {
+		return showError(input, invalidMsg);
+	}
+	return true;
+}
+
+const form = document.querySelector("#signup");
+
+const EMAIL_REQUIRED = "Please enter your name";
+const PASSWORD_REQUIRED = "Please enter your email";
+const SUBMIT_INVALID = "Please enter a correct submit";
+
+form.addEventListener("submit", function (event) {
+	// stop form submission
+	event.preventDefault();
+
+	// validate the form
+	let emailValid = hasValue(form.elements["email"], EMAIL_REQUIRED);
+	let passwordValid = validateEmail(form.elements["password"], password_REQUIRED, password_INVALID);
+	// if valid, submit the form.
+	if (emailValid && passwordValid) {
+		alert("Demo only. No form was posted.");
+	}
+});
+
