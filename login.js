@@ -31,6 +31,8 @@ function displayTable() {
   }
 }
 
+alert(message);
+
 
 // this one will add email
 function addIncome() {
