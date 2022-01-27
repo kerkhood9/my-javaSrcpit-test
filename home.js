@@ -24,6 +24,20 @@ for (let i = 0; i < names.length; i++) {
   }
   alert(message);
 
+  var checkAge = (e) => {
+    if(document.querySelector('#age').value < 18){
+    
+        // Preventing the submit of the form
+        e.preventDefault();
+        
+        // Displaying the modal window
+        alert("You have to be older 18!");
+    }
+};
+
+// Listening to the click event on the button
+document.querySelector('button').addEventListener('click', checkAge);
+
 
 for (let count = 0; count < people.length; count++) {
   if ((people[count]. name > name ) && (people[count].age == age ) && (people[count].name=='khumbulani')) {
