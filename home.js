@@ -16,7 +16,7 @@ let yearlAge = age.value;
 
 form.elements[1]; // by index
 form.elements['name']; //  by name
-form.elements['age']; // by years
+form.elements['age']; // by age
 
 for (let i = 0; i < names.length; i++) {
   display.innerHTML += "<hr>" + names[i] + "</hr>" 
