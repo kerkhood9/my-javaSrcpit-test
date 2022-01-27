@@ -22,11 +22,11 @@ function displayTable() {
   for (let i = 0; i < transactions.length; i++) {
       table.innerHTML +=
           "<tr><td>" +
-          transactions[i].type +
+          transactions[i].email +
           "</td><td>" +
-          transactions[i].detail +
+          transactions[i].email +
           "</td><td>" +
-          transactions[i].amount + 
+          transactions[i].password + 
           "</td></tr>";
   }
 }
