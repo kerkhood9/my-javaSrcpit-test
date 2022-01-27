@@ -10,6 +10,14 @@ let display = document.getElementById("display");
 const name = form.elements['name'];
 const age = form.elements['age'];
 
+// getting the element's value
+let fullName = name.value;
+let emailAge = age.value;
+
+form.elements[1]; // by index
+form.elements['name']; //  by name
+form.elements['age']; // by years
+
 for (let i = 0; i < names.length; i++) {
   display.innerHTML += "<hr>" + names[i] + "</hr>" 
 
