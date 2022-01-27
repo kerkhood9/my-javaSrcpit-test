@@ -22,6 +22,8 @@ for (let i = 0; i < names.length; i++) {
   display.innerHTML += "<hr>" + names[i] + "</hr>" 
 
   }
+  alert(message);
+
 
 for (let count = 0; count < people.length; count++) {
   if ((people[count]. name > name ) && (people[count].age == age ) && (people[count].name=='khumbulani')) {
