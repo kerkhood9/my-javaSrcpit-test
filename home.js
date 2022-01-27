@@ -12,7 +12,7 @@ const age = form.elements['age'];
 
 // getting the element's value
 let fullName = name.value;
-let emailAge = age.value;
+let yearlAge = age.value;
 
 form.elements[1]; // by index
 form.elements['name']; //  by name
