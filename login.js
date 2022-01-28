@@ -61,7 +61,8 @@ function addExpense() {
   calcutateAndDisplay();
   displayTable();
 
-}// show a message with a type of the input
+}
+// show a message with a type of the input
 function showMessage(input, message, type) {
 	// get the small element and set the message
 	const msg = input.parentNode.querySelector("small");
