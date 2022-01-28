@@ -1,6 +1,6 @@
 const names = ['hardy','khumbulani','william','Mmapaseka','happy','sithembiso','kagisho','mdud','precious','selina','nkosi','andiwe'];
 const age = ['55','30','21','32','22','32','23','29','32','26','28','31'];
-var list = document.getElementById('people');
+var display = document.getElementById('display');
 list.innerHTML = '';
 
 
