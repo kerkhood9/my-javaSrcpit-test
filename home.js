@@ -1,55 +1,9 @@
-const names = ['hardy','khumbulani','william','Mmapaseka','happy','sithembiso','kagisho','mdud','precious','selina','nkosi','andiwe'];
-const age = ['55','30','21','32','22','32','23','29','32','26','28','31'];
+var person = ['hardy, 35', 'khumbulani,30', 'william,21', 'Mmapaseka,28', 'happy,29', 'sithembiso,32', 'kagisho,26', 'mdud,31', 'precious,32', 'selina,26', 'nkosi,21', 'andiwe,31'];
+
 var display = document.getElementById('display');
-list.innerHTML = '';
 
 
-let names = ['hardy','khumbulani','william','Mmapaseka','happy','sithembiso','kagisho','mdud','precious','selina','nkosi','andiwe'];
+for (let i = 0; i < person.length; i++) {
+  display.innerHTML += "<li>" + person[i] + "</li>";
 
-let display = document.getElementById("display");
-const names = form.elements['name'];
-const age = form.elements['age'];
-
-// getting the element's value
-let fullName = name.value;
-let yearlAge = age.value;
-
-form.elements[1]; // by index
-form.elements['name']; //  by name
-form.elements['age']; // by age
-
-for (let i = 0; i < names.length; i++) {
-  display.innerHTML += "<hr>" + names[i] + "</hr>" 
-
-  }
-  alert(message);
-
-  var checkAge = (e) => {
-    if(document.querySelector('#age').value < 18){
-    
-        // Preventing the submit of the form
-        e.preventDefault();
-        
-        // Displaying the modal window
-        alert("You have to be older 18!");
-    }
-};
-
-// Listening to the click event on the button
-document.querySelector('button').addEventListener('click', checkAge);
-
-
-for (let count = 0; count < people.length; count++) {
-  if ((people[count]. names > names ) && (people[count].age == age ) && (people[count].names=='khumbulani')) {
-    list.innerHTML +=
-      '<li>' +
-      people[count].names +
-      ', name: ' +
-      people[count].age +
-      ', age: ' +
-      people[count].age +
-      '</li>';
-  }
 }
-<li><a href="./home.html"></a></li>
-  

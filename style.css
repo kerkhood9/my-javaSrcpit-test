@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    border-color: blue;
+    border-color: rgb(152, 152, 243);
     table-layout: auto;
     -webkit-text-size-adjust: 50%;
 }
@@ -33,6 +33,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    border-radius: 10px;
   }
 
   .fcc-btn {
@@ -46,5 +47,5 @@ body {
      width: 100%;
      border: 1px; 
      border-radius: 4px;
- } 
+ }
  
