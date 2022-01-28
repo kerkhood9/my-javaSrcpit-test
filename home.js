@@ -1,5 +1,5 @@
-const name = document.getElementById("name"); 
-const age = parseInt(document.getElementById('age').value) || 0;
+const name = ['hardy','khumbulani','william','Mmapaseka','happy','sithembiso','kagisho','mdud','precious','selina','nkosi','andiwe'];
+const age = ['55','30','21','32','22','32','23','29','32','26','28','31'];
 var list = document.getElementById('people');
 list.innerHTML = '';
 
